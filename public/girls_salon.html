@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Girls Beauty Salon</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<style>
+        /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+    background-image: url("https://media.istockphoto.com/id/1369338847/photo/senior-handsome-man-visiting-hairstylist-in-modern-barber-shop.jpg?b=1&s=170667a&w=0&k=20&c=Qyi8ti-giemG_CtseJospAjpkaMBPLVFtBUTc2glbWQ=");
+    background-size: cover;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li a {
+color: #0d0d0d;
+text-decoration: none;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+color: #f1c40f;
+}
+
+.cta-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #f1c40f;
+color: #333;
+text-decoration: none;
+font-weight: bold;
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+background-color: #333;
+color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Header styles */
+
+/* Hero styles */
+#hero {
+    background-color: #333;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+#hero h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+/* Services styles */
+#services {
+  background-color: #36b33e;
+  padding: 50px 0;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-container .service {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.services-container .service img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.services-container .service h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+/* Gallery styles */
+#gallery {
+background-color: #333;
+color: #fff;
+padding: 50px;
+text-align: center;
+}
+
+#gallery h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 20px;
+margin-top: 50px;
+}
+
+.gallery-grid img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+transition: all 0.3s ease;
+}
+
+.gallery-grid img:hover {
+transform: scale(1.1);
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+/* About styles */
+
+#about h1 {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.list{
+  	  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  flex-direction: row;
+      
+margin: 100px;
+  z-index: 1;
+  
+  }
+  .list div{
+  	display: flex;
+  	  background-color:  lightpink;
+  	  padding:15px;
+  width: 80%;
+  margin: 0 0 .5rem;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1em;
+  font-size: 15px;
+  background-size:10px;
+  background-position: 20px 2px;
+  }
+
+/* Contact styles */
+#contact {
+  padding: 50px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+background-color: #666;
+}
+
+/* Footer styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <h1 id="home">Girls Beauty Salon</h1>
+        <p>Welcome to our salon for girls!</p>
+        <a href="C:\Users\tvika\OneDrive\Desktop\internship\beauty_salon_template\public\book_appointment.html" class="cta-button">Book Now</a>
+        <a href="C:\Users\tvika\OneDrive\Desktop\internship\beauty_salon_template\public\list.html" class="cta-button">List Service</a>
+      </header>
+      
+	
+	<section id="services">
+		<div class="container">
+			<h2>Our Services</h2>
+			<ul>
+				<li>
+					<div class="service-icon"><i class="fas fa-cut"></i></div>
+					<h3>Haircut</h3>
+					<p>There are many different types of haircuts for girls, depending on their hair length, texture, and personal preferences. Here are some popular options:
+
+                      </p><li><ol start="1">  Bob: This is a classic haircut that looks great on many different face shapes and hair types. It involves cutting the hair to chin-length or just above the shoulders.
+                        
+                       </ol><ol> Pixie cut: This is a very short haircut that can be styled in a variety of ways. It's a great option for girls with fine hair who want to create the illusion of more volume.
+                        
+                       </ol><ol> Lob: A long bob, or "lob," is a popular haircut that falls just above or below the shoulders. It's a great option for girls who want a shorter haircut but still want to keep some length.
+                        
+                       </ol><ol> Layers: Layered haircuts are great for adding texture and movement to the hair. They can be combined with other haircuts, like the bob or lob, to create a unique look.
+                        
+                       </ol><ol>  Bangs: Bangs are a versatile haircut option that can be styled in many different ways. </ol></li>
+                    </ol></li>
+				<li>
+					<div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+					<h3>Makeup</h3>
+					<p>Makeup is a fun way to express yourself and enhance your natural beauty. Here are some basic tips for girls who are new to makeup:
+
+                        Start with a clean, moisturized face. This will help your makeup go on smoothly and stay in place throughout the day.
+                        
+                        Apply a primer. This will create a smooth base for your makeup and help it last longer.
+                        
+                        Choose a foundation that matches your skin tone. Apply it evenly over your face using a brush, sponge, or your fingers.
+                        
+                        Use concealer to cover any blemishes, dark circles, or other imperfections.
+                        
+                        Apply a powder to set your foundation and prevent shine.
+                        
+                        Define your eyebrows using a pencil or powder.
+                        
+                        Apply eyeshadow to your eyelids using a brush. You can use one color or blend several together for a more dramatic look.
+                        
+                        Use eyeliner to define your eyes. You can use a pencil, liquid, or gel liner.
+                        
+                        Apply mascara to your lashes to make them look longer and fuller.
+                        
+                        Finish with a lip color of your choice. You can use a lipstick, lip gloss, or lip stain.
+                        
+                        </p>
+				</li>
+				<li>
+					<div class="service-icon"><i class="fas fa-spa"></i></div>
+					<h3>Spa Treatment</h3>
+					<p>Spa treatments are a great way to relax, de-stress, and pamper yourself. Here are some popular spa treatments that you might enjoy:
+
+                        Massage: A massage involves the manipulation of the body's soft tissues, including the muscles, tendons, and ligaments. There are many different types of massages, including Swedish, deep tissue, and hot stone.
+                        
+                        Facial: A facial involves the cleansing, exfoliating, and moisturizing of the face. It can help improve the appearance of your skin and leave you feeling refreshed and rejuvenated.
+                        
+                        Body scrub: A body scrub involves the exfoliation of the skin using a mixture of salt, sugar, or other natural ingredients. It can help remove dead skin cells and leave your skin feeling soft and smooth.
+                        
+                        Body wrap: A body wrap involves the application of a mixture of natural ingredients to the body, which is then wrapped in a warm blanket. It can help detoxify the body, improve circulation, and leave your skin feeling hydrated and refreshed.
+                        
+                        Pedicure: A pedicure involves the grooming and pampering of the feet and toenails. It can help improve the appearance of your feet and leave you feeling relaxed and refreshed.</p>
+				</li>
+				<li>
+					<div class="service-icon"><i class="fas fa-leaf"></i></div>
+					<h3>Nail Care</h3>
+					<p>Nail care is an important part of personal hygiene and grooming. Here are some tips for keeping your nails healthy and looking great:
+
+                        Keep your nails clean: Wash your hands regularly with soap and water to keep your nails clean and free from dirt and bacteria.
+                        
+                        Trim your nails regularly: Use a nail clipper to trim your nails straight across, and then use a nail file to smooth the edges.
+                        
+                        Moisturize your nails and cuticles: Apply a moisturizing cream or oil to your nails and cuticles to keep them hydrated and healthy.
+                        
+                        Avoid biting your nails: Biting your nails can damage the nail bed and lead to infection.
+                        
+                        Avoid using your nails as tools: Don't use your nails to open packages or scrape off labels, as this can cause your nails to break or split.
+                        
+                        </p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="gallery">
+		<div class="container">
+			<h2>Our Gallery</h2>
+			<div class="gallery-grid">
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHMlMjBpbiUyMHNhbG9uJTIwY2hhaXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Girl in salon chair">
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmFpbCUyMGFydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Nail art">
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNwYSUyMHRyZWF0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Spa treatment">
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1613966802194-d46a163af70d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFrZXVwJTIwYXJ0aXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Makeup artist">
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFpcmN1dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Haircut">
+				</div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmFpbCUyMHNhbG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Nail salon">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJpZGUlMjBtYWtldXB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Nail salon">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXR5JTIwc2Fsb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Nail salon">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div style="background-color: aquamarine;">
+            <h1>About Us</h1>
+            <p style="padding-left: 20px;">Inbeasea is a premier beauty salon located in the heart of Delhi. Established in March 2021, it quickly became a go-to destination for those looking for top-notch beauty services. The salon offers a wide range of services, including hair styling, makeup, skin care, and more.
+
+                One of the things that sets Inbeasea apart from other salons is the level of expertise of its stylists and estheticians. They are highly trained and experienced, and are dedicated to providing personalized attention to each and every client.
+                
+                Whether you're looking for a new haircut or a relaxing facial, Inbeasea has something for everyone. Their hair stylists are experts at creating the latest trends and styles, while their estheticians use the best products and techniques to leave your skin looking and feeling its best.
+                
+                he salon's modern and sophisticated decor provides a welcoming and relaxing environment, making it the perfect place to unwind and be pampered. And with a team of friendly and professional staff, you can be sure that you'll receive top-notch service every time you visit.
+                
+                If you're looking for a beauty salon that offers a wide range of services and expert stylists, look no further than Inbeasea. With its commitment to quality and customer satisfaction, it is sure to become your go-to destination for all your beauty needs.
+                
+                </p>
+                <br>
+            
+        </div></section>
+        <div class="list" style="width: 900px; height: 390px; padding-left: 200px; padding-top:10px; font-weight: bold;">
+            <div style="width:230px; "><p>Haircut <br><br>A basic haircut for women.<br><br>$100</p></div>
+            <div style="width:230px;">Eyelash Extensions<br><br>A lash extension service for women<br>$345</div>
+             <div style="width: 230px; right: 300px; ">Hair Styling <br><br>A styling service for women's hair<br><br>$500</div>
+             <div style="width: 230px;">Hair Coloring<br><br>A hair coloring service for women<br><br>$600</div>
+             <div style="width: 230px;">Manicure<br><br>A basic manicure for women<br><br>$800</div>
+             <div style="width: 230px;">Pedicure<br><br>A basic pedicure for women<br><br>$900</div>
+             <div style="width: 230px;">Gel Nails<br><br>A gel nail service for women<br><br>$3000</div>
+              
+          
+          </div>
+        
+          
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2023 Girls Beauty Salon. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>    

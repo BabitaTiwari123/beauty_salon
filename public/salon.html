@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beauty Salon</title>
+	
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #F9B9B9;
+	color: #0e0e0e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em;
+    font-weight: bold;
+    
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+nav li {
+	margin: 0 1em;
+}
+
+nav a {
+	color: #0b0b0b;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.hero {
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYXV0eSUyMHNhbG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+	background-size: cover;
+	background-position: center;
+	color: #cd1b1b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+    font-size: 34px;
+}
+
+.btn{
+    background-color: yellow;
+
+    position: absolute;
+    top:85%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:1px solid black;
+    padding: 10px 30px;
+    color:yellow;
+    
+}
+.btn a{
+    text-decoration: none;
+    color:red;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+
+.services ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.services li {
+	flex-basis: 30%;
+	margin: 1em;
+}
+
+.services img {
+	width: 100%;
+}
+
+.pricing {
+	padding: 2em;
+}
+
+.pricing table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.pricing th {
+	background-color: #F9B9B9;
+	color: #100f0f;
+	padding: 1em;
+}
+
+.pricing td {
+	padding: 1em;
+	text-align: center;
+	border: 1px solid #0f0f0f;
+}
+
+.gallery {
+	padding: 2em;
+}
+
+.gallery ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery li {
+	flex-basis: 30%;
+	margin: 1em;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+.contact {
+	padding: 2em;
+}
+
+.contact label {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.contact input,
+.contact textarea {
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 1em;
+	border: 1px solid #131212;
+	border-radius: 4px;
+}
+
+.contact button {
+	background-color: #F9B9B9;
+	color: #0f0101;
+	border: none;
+	padding: 0.5em;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #F9B9B9;
+	color: #090909;
+	padding: 1em;
+	text-align: center;
+}
+
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Beauty Salon</h1>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#Price">Pricing</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<h2>Welcome to Our Salon</h2>
+			<p>Where beauty meets perfection.</p>
+            <div class="btn">  <a href="C:\Users\tvika\OneDrive\Desktop\internship\beauty_salon_template\public\book_appointment.html" stylesheet="border">Book an Appointment</a></div>
+			
+		</section>
+
+		<section class="services" id="services">
+			<h2>Our Services</h2>
+			<ul>
+				<li>
+					<img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFpcmN1dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Haircut">
+					<h3>Haircuts and Styling</h3>
+					<p>Our expert stylists will give you a haircut and style that perfectly suits your personality and lifestyle.</p>
+				</li>
+				<li>
+					<img src="https://images.unsplash.com/photo-1551723454-7565a1f5b161?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1ha2V1cHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Makeup">
+					<h3>Makeup Application</h3>
+					<p>Our professional makeup artists will enhance your natural beauty and create a flawless look for any occasion.</p>
+				</li>
+				<li>
+					<img src="https://images.unsplash.com/photo-1542848285-4777eb2a621e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhY2lhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Facial">
+					<h3>Facial Treatments</h3>
+					<p>Our facial treatments will rejuvenate your skin and leave you feeling refreshed and revitalized.</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="pricing" id="Price">
+			<h2>Pricing</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Haircut and Style</td>
+						<td>$50</td>
+					</tr>
+					<tr>
+						<td>Makeup Application</td>
+						<td>$75</td>
+					</tr>
+					<tr>
+						<td>Facial Treatment</td>
+						<td>$100</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="gallery" id="gallery">
+			<h2>Gallery</h2>
+			<ul>
+				<li><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhhaXIlMjBzdHlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Gallery Image 1"></li>
+				<li><img src="https://images.unsplash.com/photo-1625798368808-3bc34f8163ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFrZXVwJTIwYXJ0aXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Gallery Image 2"></li>
+				<li><img src="https://images.unsplash.com/photo-1641699862936-be9f49b1c38d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJyaWRhbCUyMG1ha2V1cHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Gallery Image 3"></li>
+				<li><img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2Fsb24lMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Gallery Image 4"></li>
+				<li><img src="https://images.unsplash.com/photo-1470259078422-826894b933aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNhbG9uJTIwc3RhZmZ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Gallery Image 5"></li>
+				<li><img src="https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJveXMlMjBzYWxvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Gallery Image 6"></li>
+				</ul>
+				</section>
+
+    <section class="contact" id="contact">
+		<h2>Contact Us</h2>
+		<form action="#" method="POST">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<button type="submit">Send</button>
+		</form>
+	</section>
+</main>
+
+<footer>
+	<p>&copy; 2023 Beauty Salon</p>
+</footer>
+</body>
+</html>
